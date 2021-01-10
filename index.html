@@ -8,7 +8,12 @@
 </head>
 <body ng-app="Trends">
     <div ng-controller="MainController">
-
+        <h1>Most Popular Stories in Technology</h1>
+        <div class="story" ng-repeat="story in list">
+            <h2>{{ story.title }}</h2>
+            <p>{{ story.abstract }}</p>
+            <a ng-href="{{ story.url }}" target="_BLANK">Read More</a>
+        </div>
     </div>
     <!--Modules-->
     <script src="js/app.js"></script>
