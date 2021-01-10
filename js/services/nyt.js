@@ -1,10 +1,8 @@
-require('nytApi');
 app.factory('nyt', ['$http', function($http) {
-    return $http.get(nytUrl + `?api-key=${nytApi}`)
-        .success(function(data){
-            return data;
-        })
-        .error(function(err) {
-            return err;
-        })
+    return $http.get(nytApi.url, {params: {'api-key': nytApi.key}})
+        .then(function(response){
+            return response.data.results;
+        }, function(error){
+            console.log(error);
+        });
 }])

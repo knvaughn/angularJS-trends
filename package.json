@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-trends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knvaughn/angularJS-trends.git"
+  },
+  "author": "kristin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knvaughn/angularJS-trends/issues"
+  },
+  "homepage": "https://github.com/knvaughn/angularJS-trends#readme",
+  "type": "module"
+}

@@ -1,3 +1,3 @@
-app.controller('MainController', ['$scope', function($scope) {
-
+app.controller('MainController', ['$scope', 'nyt', function($scope, nyt) {
+    nyt.then(response => console.log(response))
 }]);
